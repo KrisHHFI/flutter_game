@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/increment_button.dart';
 
 void main() {
   runApp(const MyApp());
@@ -30,7 +31,7 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
-  int _counter = 0;
+  int _counter = 5;
 
   void _incrementCounter() {
     setState(() {
@@ -46,17 +47,13 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              '$_counter' "m",
+              '$_counter' "kg",
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],
         ),
       ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
-      ),
+      floatingActionButton: IncrementButton(onPressed: _incrementCounter),
     );
   }
 }
