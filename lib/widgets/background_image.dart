@@ -7,7 +7,7 @@ class BackgroundImage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Positioned.fill(
       child: Image.asset(
-        'images/Cat.jpg',
+        'images/Cat.jpg', // Image credit: Pexels, Halil İbrahim ÇETİN, Focus Photography of Gray and Brown Cat
         fit: BoxFit.cover,
       ),
     );
