@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'widgets/increment_button.dart';
+import 'widgets/increment_counter.dart';
 
 void main() {
   runApp(const MyApp());
@@ -46,11 +47,8 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
-            Text(
-              '$_counter' "kg",
-              style: Theme.of(context).textTheme.headlineMedium,
-            ),
             IncrementButton(onPressed: _incrementCounter),
+            IncrementCounter(counter: _counter),
           ],
         ),
       ),
