@@ -44,15 +44,19 @@ class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            const BackgroundImage(),
-            IncrementButton(onPressed: _incrementCounter),
-            IncrementCounter(counter: _counter),
-          ],
-        ),
+      body: Stack(
+        children: <Widget>[
+          const BackgroundImage(),
+          Center(
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+                IncrementCounter(counter: _counter),
+                IncrementButton(onPressed: _incrementCounter),
+              ],
+            ),
+          ),
+        ],
       ),
     );
   }
