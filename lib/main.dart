@@ -50,10 +50,10 @@ class _MyHomePageState extends State<MyHomePage> {
               '$_counter' "kg",
               style: Theme.of(context).textTheme.headlineMedium,
             ),
+            IncrementButton(onPressed: _incrementCounter),
           ],
         ),
       ),
-      floatingActionButton: IncrementButton(onPressed: _incrementCounter),
     );
   }
 }
