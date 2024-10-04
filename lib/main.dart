@@ -17,6 +17,13 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
         useMaterial3: true,
+        textTheme: const TextTheme(
+          headlineMedium: TextStyle(
+            fontSize: 24,
+            fontWeight: FontWeight.bold,
+            color: Colors.white,
+          ),
+        ),
       ),
       home: const MyHomePage(title: 'Cat App'),
     );
@@ -47,13 +54,19 @@ class _MyHomePageState extends State<MyHomePage> {
       body: Stack(
         children: <Widget>[
           const BackgroundImage(),
-          Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              children: <Widget>[
-                IncrementCounter(counter: _counter),
-                IncrementButton(onPressed: _incrementCounter),
-              ],
+          Align(
+            alignment: Alignment.bottomCenter,
+            child: Container(
+              padding:
+                  const EdgeInsets.symmetric(vertical: 20.0, horizontal: 40.0),
+              color: Colors.black.withOpacity(0.6),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: <Widget>[
+                  IncrementCounter(counter: _counter),
+                  IncrementButton(onPressed: _incrementCounter),
+                ],
+              ),
             ),
           ),
         ],
