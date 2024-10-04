@@ -13,7 +13,7 @@ class IncrementCounterState extends State<IncrementCounter> {
   @override
   Widget build(BuildContext context) {
     return Text(
-      '${widget.counter} kg',
+      '${widget.counter} strokes',
       style: Theme.of(context).textTheme.headlineMedium,
     );
   }

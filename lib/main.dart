@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'widgets/background_image.dart';
 import 'widgets/increment_button.dart';
 import 'widgets/increment_counter.dart';
 
@@ -47,6 +48,7 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
+            const BackgroundImage(),
             IncrementButton(onPressed: _incrementCounter),
             IncrementCounter(counter: _counter),
           ],
