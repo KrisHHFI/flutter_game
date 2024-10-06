@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class IncrementCounter extends StatefulWidget {
   final int counter;
-
   const IncrementCounter({super.key, required this.counter});
 
   @override
