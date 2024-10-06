@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'package:flutter/material.dart';
 import 'widgets/background_image.dart';
 import 'widgets/increment_button.dart';
@@ -40,10 +41,19 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
+  bool _isDefaultImageVisible = true;
 
   void _incrementCounter() {
     setState(() {
       _counter++;
+      _isDefaultImageVisible = false;
+    });
+
+    // After 0.5 seconds, show the default image again
+    Future.delayed(const Duration(milliseconds: 500), () {
+      setState(() {
+        _isDefaultImageVisible = true;
+      });
     });
   }
 
@@ -52,7 +62,18 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       body: Stack(
         children: <Widget>[
-          const BackgroundImage(),
+          const BackgroundImage(
+              imagePath:
+                  'assets/CatSmiling.png'), // Image credit: Pexels, Halil İbrahim ÇETİN, Focus Photography of Gray and Brown Cat (edited)
+
+          // Display default cat image while _isDefaultImageVisible is false
+          Visibility(
+            visible: _isDefaultImageVisible,
+            child: const BackgroundImage(
+                imagePath:
+                    'assets/Cat.jpg'), // Image credit: Pexels, Halil İbrahim ÇETİN, Focus Photography of Gray and Brown Cat
+          ),
+
           Align(
             alignment: Alignment.bottomCenter,
             child: Container(

@@ -1,13 +1,15 @@
 import 'package:flutter/material.dart';
 
 class BackgroundImage extends StatelessWidget {
-  const BackgroundImage({super.key});
+  final String imagePath;
+
+  const BackgroundImage({super.key, required this.imagePath});
 
   @override
   Widget build(BuildContext context) {
     return Positioned.fill(
       child: Image.asset(
-        'assets/Cat.jpg', // Image credit: Pexels, Halil İbrahim ÇETİN, Focus Photography of Gray and Brown Cat
+        imagePath,
         fit: BoxFit.cover,
       ),
     );
