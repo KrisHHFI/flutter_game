@@ -1,9 +1,5 @@
 # Flutter Game
 
-<img src=""/>
-
-<br>
-
 ### About
 
 - A very simple comedic game
@@ -15,3 +11,5 @@
 3) Navigate to the project location in your terminal
 4) Run: flutter pub get
 5) Run: flutter run -d chrome
+
+https://private-user-images.githubusercontent.com/98150294/374050226-6f95db67-9b39-4e11-9777-5174bbe26158.mp4?jwt=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJnaXRodWIuY29tIiwiYXVkIjoicmF3LmdpdGh1YnVzZXJjb250ZW50LmNvbSIsImtleSI6ImtleTUiLCJleHAiOjE3MjgyODE4MzcsIm5iZiI6MTcyODI4MTUzNywicGF0aCI6Ii85ODE1MDI5NC8zNzQwNTAyMjYtNmY5NWRiNjctOWIzOS00ZTExLTk3NzctNTE3NGJiZTI2MTU4Lm1wND9YLUFtei1BbGdvcml0aG09QVdTNC1ITUFDLVNIQTI1NiZYLUFtei1DcmVkZW50aWFsPUFLSUFWQ09EWUxTQTUzUFFLNFpBJTJGMjAyNDEwMDclMkZ1cy1lYXN0LTElMkZzMyUyRmF3czRfcmVxdWVzdCZYLUFtei1EYXRlPTIwMjQxMDA3VDA2MTIxN1omWC1BbXotRXhwaXJlcz0zMDAmWC1BbXotU2lnbmF0dXJlPTEwZDRjOTBjNTk2NmUzYzZmNjE1NTYxZThmNWJjMGQxMTg0YzI2OGZhNDJkZmJhMWYwYzVkYTUxYTBiZDQzNzkmWC1BbXotU2lnbmVkSGVhZGVycz1ob3N0In0.ihoyrmXC10dtemYMtdIbgCKfmKj3qnNWGLzdkjx-SvA
